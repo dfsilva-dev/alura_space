@@ -2,11 +2,11 @@
 {% load static %}
 {% block content %}
     <div class="pagina-inicial">
-        {% include 'galeria/partials/_header.html' %}
+        {% include 'partials/_header.html' %}
         <main class="principal">
-            {% include 'galeria/partials/_sidemenu.html' %}
+            {% include 'partials/_sidemenu.html' %}
             <section class="conteudo">
-                {% include 'galeria/partials/_banner.html' %}
+                {% include 'partials/_banner.html' %}
                 <section class="galeria">
                     <div class="cards">
                         <h2 class="cards__titulo">Navegue pela galeria</h2>
@@ -34,7 +34,7 @@
                             </li>
                             {% endfor %}
                             {% else %}
-                            {% include 'galeria/partials/_images_not_found.html' %}
+                            {% include 'partials/_images_not_found.html' %}
                             {% endif %}
                         </ul>
                     </div>
